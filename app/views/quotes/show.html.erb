@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @quote.author %>
+</p>
+
+<p>
+  <strong>Quotation:</strong>
+  <%= @quote.quotation %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @quote.source %>
+</p>
+
+<%= link_to 'Edit', edit_quote_path(@quote), class:" w3-btn w3-round w3-red" %> |
+<%= link_to 'Back', quotes_path, class:" w3-btn w3-round w3-red" %>

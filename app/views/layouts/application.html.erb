@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Myquotes</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    
+    <ul>
+      <a href="/static_pages/home "class="w3-btn w3-round-large w3-pale-blue">Home</a>
+      <a href="/quotes" class="w3-btn w3-round-large w3-pale-blue">Quotes</a>
+      <a href="/static_pages/help" class="w3-btn w3-round-large w3-pale-blue">Help</a>
+      <a href="/static_pages/about" class="w3-btn w3-round-large w3-pale-blue">About</a>
+    </ul>
+    <%= yield %>
+  </body>
+</html>
